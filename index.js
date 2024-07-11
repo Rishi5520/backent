@@ -7,3 +7,7 @@ const PORT = 8600
 app.listen(process.env.PORT,()=>{
     console.log(`server listion on port number ${PORT}`);
 })
+
+app.get('/',(req,res)=>{
+    res.send("Hello Backend")
+});
